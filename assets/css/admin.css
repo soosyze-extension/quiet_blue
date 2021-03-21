@@ -123,7 +123,7 @@
     border: 1px solid #e1e4e8;
     border-bottom-color: rgb(225, 228, 232);
     border-bottom-style: solid;
-    border-bottom-width: 1px; 
+    border-bottom-width: 1px;
 }
 .user-picture_default {
     position: relative;
@@ -138,7 +138,7 @@
 }
 .user-picture_default_username {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5em;
@@ -206,38 +206,38 @@ thead{
     padding: 1em;
 }
 @media (max-width: 768px) {
-    .table > tbody > tr > td, 
-    .table > tbody > tr > th, 
-    .table > tfoot > tr > td, 
-    .table > tfoot > tr > th, 
-    .table > thead > tr > td, 
+    .table > tbody > tr > td,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > td,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
     .table > thead > tr > th {
         border: 0;
     }
-    .responsive table, 
-    .responsive thead, 
-    .responsive tbody, 
-    .responsive th, 
-    .responsive td, 
-    .responsive tr { 
-        display: block; 
+    .responsive table,
+    .responsive thead,
+    .responsive tbody,
+    .responsive th,
+    .responsive td,
+    .responsive tr {
+        display: block;
     }
-    .responsive thead { 
+    .responsive thead {
         display:none;
     }
-    .responsive td { 
+    .responsive td {
         position: relative;
         border: 0px solid transparent;
-        padding-left: 50% !important; 
+        padding-left: 50% !important;
         white-space: normal;
         text-align:right;
         border-bottom: 0;
     }
-    .responsive td:before { 
+    .responsive td:before {
         content: attr(data-title);
         position: absolute;
         left: 0;
-        width: 45%; 
+        width: 45%;
         height:100%;
         white-space: nowrap;
         text-overflow: ellipsis !important;
@@ -246,7 +246,7 @@ thead{
         font-weight: 600;
         padding-left: .5em;
     }
-    .responsive tbody tr th{ 
+    .responsive tbody tr th{
         background-color:#20222d;
         color: #fff;
         text-align: center;
@@ -418,7 +418,7 @@ label[data-tooltip]:before {
 }
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
+    from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 @keyframes animatetop {
@@ -444,8 +444,8 @@ label[data-tooltip]:before {
     background-color: #20222d;
     color: white;
 }
-.modal-header h2, 
-.modal-header h3, 
+.modal-header h2,
+.modal-header h3,
 .modal-header h4 {
     padding: 0;
     margin: 0;

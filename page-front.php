@@ -5,10 +5,10 @@
             <div class="col-md-6 col-md-offset-3">
             <?php if ($logo): ?>
 
-                <img src="<?php echo $logo; ?>" alt="Logo site" class="img-responsive logo">
+                <img src="<?php echo htmlspecialchars($logo); ?>" alt="Logo site" class="img-responsive logo">
             <?php endif; ?>
 
-            <h1><?php echo $title; ?></h1>
+            <h1><?php echo htmlspecialchars($title); ?></h1>
             <?php if (!empty($section[ 'header' ])): ?>
 
                 <div class="col-md-12">
@@ -26,7 +26,7 @@
         <div class="row">
             <ul>
                 <li>
-                    <span id="toogle_menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i> Menu</span>
+                    <span id="toogle_menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i> <?php echo t('Menu'); ?></span>
                     <?php echo $section[ 'main_menu' ]; ?>
 
                 </li>
@@ -62,6 +62,8 @@
 
                 <?php echo $section[ 'content_header' ]; ?>
             <?php endif; ?>
+
+            <?php echo $section[ 'submenu' ]; ?>
 
             <?php echo $section[ 'content' ]; ?>
             <?php if (!empty($section[ 'content_footer' ])): ?>

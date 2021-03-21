@@ -3,11 +3,11 @@
     <?php if ($logo): ?>
 
         <a href="<?php echo $base_path; ?>">
-            <img src="<?php echo $logo; ?>" alt="Logo site" class="img-responsive logo">
+            <img src="<?php echo htmlspecialchars($logo); ?>" alt="Logo site" class="img-responsive logo">
         </a>
     <?php endif; ?>
 
-    <h2><a href="<?php echo $base_path; ?>"><?php echo $title; ?></a></h2>
+    <h2><a href="<?php echo $base_path; ?>"><?php echo htmlspecialchars($title); ?></a></h2>
     <?php if (!empty($section[ 'header' ])): ?>
 
         <?php echo $section[ 'header' ]; ?>
@@ -17,7 +17,7 @@
 <nav id="nav_main" role="navigation">
     <ul>
         <li>
-            <span id="toogle_menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i> Menu</span>
+            <span id="toogle_menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i> <?php echo t('Menu'); ?></span>
             <?php echo $section[ 'main_menu' ]; ?>
 
         </li>
@@ -25,7 +25,7 @@
 </nav>
 <div id="wrapper_main">
     <header>
-        <h1><?php echo $title_main; ?></h1>
+        <h1><?php echo htmlspecialchars($title_main); ?></h1>
     </header>
     <div class="container">
         <div class="row">
@@ -56,6 +56,7 @@
 
                 <?php echo $section[ 'content_header' ]; ?>
             <?php endif; ?>
+            <?php echo $section[ 'submenu' ]; ?>
 
             <?php echo $section[ 'content' ]; ?>
             <?php if (!empty($section[ 'content_footer' ])): ?>

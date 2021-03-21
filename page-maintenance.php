@@ -2,15 +2,15 @@
 <header id="wrapper_header">
     <?php if ($logo): ?>
 
-        <img src="<?php echo $logo; ?>" alt="Logo site" class="img-responsive logo">
+        <img src="<?php echo htmlspecialchars($logo); ?>" alt="Logo site" class="img-responsive logo">
     <?php endif; ?>
 
-    <h1><?php echo $title; ?></h1>
+    <h1><?php echo htmlspecialchars($title); ?></h1>
 </header>
 
 <div id="wrapper_main">
     <header>
-        <h2><?php echo $title_main; ?></h2>
+        <h2><?php echo htmlspecialchars($title); ?></h2>
     </header>
     <div class="container">
         <div class="row">

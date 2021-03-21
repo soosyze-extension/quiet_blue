@@ -176,7 +176,7 @@ dt{
     position: fixed;
     right: 25px;
 }
-.btn.disabled, .btn[disabled], 
+.btn.disabled, .btn[disabled],
 fieldset[disabled] .btn {
     cursor: not-allowed;
     filter: alpha(opacity=65);
@@ -491,7 +491,7 @@ tbody tr:hover {
 .pagination > li {
     display: inline;
 }
-.pagination > li > a, 
+.pagination > li > a,
 .pagination > li > span {
     position: relative;
     float: left;
@@ -507,11 +507,11 @@ tbody tr:hover {
     border-bottom-color: rgb(221, 221, 221);
     border-left-color: rgb(221, 221, 221);
 }
-.pagination > .active > a, 
-.pagination > .active > a:focus, 
-.pagination > .active > a:hover, 
-.pagination > .active > span, 
-.pagination > .active > span:focus, 
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
 .pagination > .active > span:hover {
     z-index: 3;
     color: #fff;

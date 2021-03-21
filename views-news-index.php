@@ -19,7 +19,7 @@
                     </span>
                 </div>
                 <h3 class="card__title"><?php echo $new[ 'title' ]; ?></h3>
-                
+
                     <?php echo $new[ 'field' ][ 'summary' ]['field_display']; ?>
                 </div>
                 <div class="card_footer">
